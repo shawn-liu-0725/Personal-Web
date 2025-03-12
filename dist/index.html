@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <title>Shawn's Introduction</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="劉上恩的個人數位履歷，內含作品、街舞影片、個人自傳、獎狀證明……等資料，歡迎點閱!">
+    <meta name="keywords" content="ShawnLiu,劉上恩,ShawnLiu's Introduction">
+    <meta name="author" content="ShawnLiu">
+    <meta name="generator" content="VScode">
+    <meta name="copyright" content="ShawnLiu">
+    <meta name="distribution" content="Taiwan">
+    
+        <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+   
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/png.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <script>
+    $(function(){
+        _init();
+    })
+    function _init(){
+        $("body").removeClass("init");
+           $("#lightbox1").animate({opacity : 0},800, 'easeInQuint',function(){
+             $("#lightbox1").remove();
+             $("#loading").animate({opacity : 0},300, 'easeOutCubic',function(){
+               $("body").css( "background-color","transparent").css("overflow-y","")
+                $("#loading").remove();
+             });
+        });
+    }
+</script>
+<style>
+    @-webkit-keyframes loading2 {
+       0% {
+        transform: translateY(15px);
+        opacity: .7;
+       }
+       100% {
+         transform: translateY(0px);
+         opacity: 1;
+       }
+    }
+    @keyframes loading2 {
+       0% {
+        transform: translateY(15px);
+        opacity: .7;
+    }
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+    body.init{
+        overflow-y: hidden;
+        background-color: #645450;
+    }
+    body.init>*{
+        display: none;
+    }
+    .logo_1{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        animation: loading2 .95s infinite alternate;
+        -moz-animation: loading2 .95s infinite alternate;
+        -webkit-animation: loading2 .95s infinite alternate;
+        animation-timing-function: ease-in-out;
+    }
+    #loading{
+        z-index: 10001;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 150px;
+        height: 125px;
+        margin-left: -70px;
+        margin-top: -40px;
+        opacity: 1;
+        display: block;
+    }
+    #lightbox1{
+        opacity:1;
+    
+        position: fixed;
+        top: 0; left: 0;right: 0;bottom: 0;
+        z-index: 10000;
+        background-color: #645450;
+        display: block;
+    }
+    ::selection {
+        background-color: #645450;
+        color: #ffffff;
+    }
+    ::-moz-selection {
+        background-color: #645450;
+        color: #ffffff;
+    }
+    img::selection {
+        background: transparent;
+    }
+    img::-moz-selection {
+        background: transparent;
+    }
+</style>
+    
+<div id="loading">
+    <div class="logo_1">
+    </div>
+</div>
+<div id="lightbox1"></div>
+    <section class="navbox">
+  <nav class="navbar navbar-expand-lg navbar-dark main" style="background-color: #645450;max-width: 1920px;">
+    <div>
+      <a href="index.html"><img src="img/logo.png" id="nav_logo" alt="logo"></a>
+    </div>
+    <div class="navbar-toggler menu_btn" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menu_btn_burger">
+        </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="transition: .5s;">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+        <a class="nav-link" href="index.html" style="padding-right: 50px;color: #F0F0F0;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn.html" style="padding-right: 50px;">Diversity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logo.html" style="padding-right: 50px;">About This Web</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://shawnliu0725.github.io/note/dist" target="_blank" style="padding-right: 50px;">Note</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Catalog
+          </a>
+          <div class="dropdown-menu" id="catalognav" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item catalog" href="myself.html">Autobiography</a>
+            <a class="dropdown-item catalog" href="certificates.html">Certificates</a>
+            <a class="dropdown-item catalog" href="streetvideos.html">Dance Video</a>
+            <a class="dropdown-item catalog" href="connect.html">Portfolio</a>
+          </div>
+        </li>
+    </ul>
+    </div>
+  </nav>
+</section>
+
+    <div>
+        <section class="hung" id="ftbg">
+            <div class="main">
+                <div class="col text-light text-center mt-1"  data-aos="fade-up"
+                data-aos-duration="3000" style="margin: 0;padding: 0;">
+                    <div class="spbox">
+                        <div class="spbox1">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 100%;">
+    <ol class="carousel-indicators" id="carcontrol">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color: #fff9e9;"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: #fff9e9;"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color: #fff9e9;"></li>
+    </ol>
+    <div class="carousel-inner" style="height: 100%;" id="carset">
+      <div class="carousel-item active" id="bordersetsp">
+        <img src="img/me-3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" id="bordersetsp">
+        <img src="img/NFT.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" id="bordersetsp">
+        <img src="img/taipei.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="color: #fff9e9;"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" style="color: #fff9e9;"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+                            <div class="hung-dog">
+                                <img src="img/dog.png" id="cutedog" alt="">
+                            </div>
+                        </div>
+                        <div class="spbox2">
+                            <div class="list" id="listbox1">
+                                <span>目錄</span>
+                            </div>
+                            <div class="list" id="listbox2">
+                                <a href="myself.html"><button class="buttonset">自傳</button></a>
+                            </div>
+                            <div class="list" id="listbox3">
+                                <a href="certificates.html"><button class="buttonset">經歷證明文件</button></a>
+                            </div>
+                            <div class="list" id="listbox4">
+                                <a href="streetvideos.html"><button class="buttonset">街舞課程及比賽影片</button></a>
+                            </div>
+                            <div class="list" id="listbox5" style="margin-bottom: 0;">
+                                <a href="connect.html"><button class="buttonset">舞展影片及作品連結</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-light text-center mt-1"  data-aos="fade-up"
+                data-aos-duration="3000" >
+                    <i class="fa-solid fa-chevron-down" style="color: #79b1d6;margin-top:25px"></i>            
+                </div>
+            </div>
+        </section>
+        <section id="ftbg-1">
+            <div class="main">
+                <div class="sctop" data-aos="fade-up"
+                    data-aos-duration="3000">
+                    <div class="box">
+                        <div class="box1" id="set-1">
+                            <h3>Shawn Liu</h3>
+                            <p class="word">
+                                出身平凡，卻積極向學。<br>
+                                為了目標，為了夢想，為了成為更好的自己，<br>
+                                一次又一次的挫敗，仍澆不熄那向上之心。<br>
+                                再來一年或許是種煎熬，但也藉此檢視自己的不足，<br>
+                                遇到困難，我願意選擇面對，我願意加倍努力......
+                            </p>
+                            <a href="myself.html"><button class="spbtn">了解更多</button></a>
+                        </div>
+                        <div class="box2">
+                            <img id="photo" src="img/me.jpg" alt="my photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-light text-center mt-1"  data-aos="fade-up"
+                data-aos-duration="3000" >
+                    <i class="fa-solid fa-chevron-down" style="color: #79b1d6;margin-top:25px"></i>            
+                </div>
+            </div>
+        </section>
+        <section id="ftbg-2">
+            <div class="main">
+                <div class="sctop" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <div id="boxes">
+                        <div id="box--1">
+                            <div style="text-align: center;margin-bottom: 50px;">
+                                <a href="streetvideos.html"><button class="spbtn-1">街舞課程及比賽影片</button></a>
+                            </div>
+                            <div class="box" id="videobox">
+                                <div class="box-1"><iframe width="100%" class="videoset" src="https://www.youtube.com/embed/Jy05kTMrkdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                <div class="box-2"><iframe width="100%" class="videoset" src="https://www.youtube.com/embed/NEjvI1ZQupc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                <div class="box-3"><iframe width="100%" class="videoset" src="https://www.youtube.com/embed/G7DnNVO7B6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="box--2" class="col text-light text-center mt-1"  data-aos="fade-up"
+                data-aos-duration="3000" >
+                    <i class="fa-solid fa-chevron-down" style="color: #79b1d6;margin-top:25px"></i>            
+                </div>
+            </div>
+        </section>
+        <section id="ftbg-3">
+            <div class="main">
+                <div class="sctop" data-aos="fade-up"
+                    data-aos-duration="3000">
+                    <div id="img">
+                        <img src="img/logo.png" class="lastph" alt="">
+                    </div>
+                    <div class="box">
+                        <div id="lastword" style="text-align: left;">
+                            <h4>給每位讀到這裡的你:</h4>
+                            <p>2013，TED x Taipei，
+                            臺大醫學系柯文哲教授在演說的最後講了一句這樣的話：<br>
+                            「最困難的不是面對挫折打擊，最困難的是面對挫折打擊，卻沒有失去對人世之熱情。」，<br>
+                            或許我們曾被命運嘲弄，或許我們曾數度想要放棄，但沒有永不放棄之心，又何以品嘗成功的碩果。<br>
+                            對萬事抱有好奇，不曾停下腳步，用這樣的信條砥礪自己，造就更好的自己。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footerbox">
+    <footer>
+        <div id="footerall">
+        <div id="footerleft">
+            <ul>
+                <li><a href="https://www.facebook.com/sean.liu.7545/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/_shawn__liu/" target="_blank">Instagram</a></li>
+                <li><a href="https://github.com/ShawnLiu0725" target="_blank">Github</a></li>
+            </ul>
+        </div>
+        <div id="footerright">
+            <span>&copy; 2022 ShawnLiu Design</span>
+        </div>
+        </div>
+    </footer>
+</section>
+            <!-- Optional JavaScript -->
+    <!-- Font Awesome First, then ionicons, then AOS, then Popper.js, then Bootstrap JS, then main.js -->
+    <script src="https://kit.fontawesome.com/568a5edde4.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    </div>
+    </body>
+</html>

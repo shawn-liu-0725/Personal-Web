@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <title>StreetDanceVideos</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+   
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/png.css">
+    <link rel="stylesheet" href="css/other.css">
+
+  </head>
+  <body>
+    <script>
+    $(function(){
+        _init();
+    })
+    function _init(){
+        $("body").removeClass("init");
+           $("#lightbox1").animate({opacity : 0},800, 'easeInQuint',function(){
+             $("#lightbox1").remove();
+             $("#loading").animate({opacity : 0},300, 'easeOutCubic',function(){
+               $("body").css( "background-color","transparent").css("overflow-y","")
+                $("#loading").remove();
+             });
+        });
+    }
+</script>
+<style>
+    @-webkit-keyframes loading2 {
+       0% {
+        transform: translateY(15px);
+        opacity: .7;
+       }
+       100% {
+         transform: translateY(0px);
+         opacity: 1;
+       }
+    }
+    @keyframes loading2 {
+       0% {
+        transform: translateY(15px);
+        opacity: .7;
+    }
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+    body.init{
+        overflow-y: hidden;
+        background-color: #79b1d6;
+    }
+    body.init>*{
+        display: none;
+    }
+    .logo_1{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        animation: loading2 .95s infinite alternate;
+        -moz-animation: loading2 .95s infinite alternate;
+        -webkit-animation: loading2 .95s infinite alternate;
+        animation-timing-function: ease-in-out;
+    }
+    #loading{
+        z-index: 10001;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 150px;
+        height: 125px;
+        margin-left: -70px;
+        margin-top: -40px;
+        opacity: 1;
+        display: block;
+    }
+    #lightbox1{
+        opacity:1;
+    
+        position: fixed;
+        top: 0; left: 0;right: 0;bottom: 0;
+        z-index: 10000;
+        background-color: #79b1d6;
+        display: block;
+    }
+    ::selection {
+        background-color: #79b1d6;
+        color: #ffffff;
+    }
+    ::-moz-selection {
+        background-color: #79b1d6;
+        color: #ffffff;
+    }
+    img::selection {
+        background: transparent;
+    }
+    img::-moz-selection {
+        background: transparent;
+    }
+</style>
+    
+<div id="loading">
+    <div class="logo_1">
+    </div>
+</div>
+<div id="lightbox1"></div>
+    <section class="navbox">
+  <nav class="navbar navbar-expand-lg navbar-dark main" style="background-color: #645450;max-width: 1920px;">
+    <div>
+      <a href="index.html"><img src="img/logo.png" id="nav_logo" alt="logo"></a>
+    </div>
+    <div class="navbar-toggler menu_btn" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menu_btn_burger">
+        </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="transition: .5s;">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+        <a class="nav-link" href="index.html" style="padding-right: 50px;color: #F0F0F0;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn.html" style="padding-right: 50px;">Diversity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logo.html" style="padding-right: 50px;">About This Web</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://shawnliu0725.github.io/note/dist" target="_blank" style="padding-right: 50px;">Note</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Catalog
+          </a>
+          <div class="dropdown-menu" id="catalognav" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item catalog" href="myself.html">Autobiography</a>
+            <a class="dropdown-item catalog" href="certificates.html">Certificates</a>
+            <a class="dropdown-item catalog" href="streetvideos.html">Dance Video</a>
+            <a class="dropdown-item catalog" href="connect.html">Portfolio</a>
+          </div>
+        </li>
+    </ul>
+    </div>
+  </nav>
+</section>
+
+    <section class="bg">
+        <div class="main">
+            <div class="col text-light text-center mt-1"  data-aos="fade-up"
+            data-aos-duration="3000" style="margin: 0;padding: 0;">
+                <div class="boxsetting setting2">
+                    <div style="text-align: center;color: #413f44;" id="boxdesign">
+                        <h3>街舞課程及比賽影片</h3>
+                    </div>
+                    <div class="darkbg bordertpset borderlfset borderrtset borderbtset" style="border-radius: 30px;">
+                        <h4>High School High Vol.13線上徵選影片</h4>
+                        <div class="videobox lightbg">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/L1AGvmSIfGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                    <div class="darkbg">
+                        <h4>Rookies Vol.5比賽影片</h4>
+                        <div class="videobox lightbg" style="padding-bottom: 0;">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/vWo8Ejpino8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                        <div class="videobox lightbg">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/WRdcZUvuwcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                    </div>
+                    <div class="darkbg">
+                        <h4>街菸舞樂 Vol.2比賽影片</h4>
+                        <div class="videobox lightbg">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/8o_GJ14Jt3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                    </div>
+                    <div class="darkbg">
+                        <h4>Locking常態課</h4>
+                        <div class="videobox lightbg">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/G7DnNVO7B6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                    </div>
+                    <div class="darkbg">
+                        <h4>Hip Hop常態課</h4>
+                        <div class="videobox lightbg">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/KiyaN0TadkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                    </div>
+                    <div class="darkbg">
+                        <h4>Hip Hop專攻班</h4>
+                        <div class="videobox lightbg" style="padding-bottom: 0;">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/rjl8B0xUEKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                        <div class="videobox lightbg">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/RtPGYzARbCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                    </div>
+                    <div class="darkbg">
+                        <h4>House常態課</h4>
+                        <div class="videobox lightbg">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/Jy05kTMrkdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                    </div>
+                    <div class="darkbg">
+                        <h4>Soul常態課</h4>
+                        <div class="videobox lightbg">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/FIqPRYJ2B74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                    </div>
+                    <div class="darkbg"style="border-radius: 0 0 25px 25px;">
+                        <h4>Popping常態課</h4>
+                        <div class="videobox lightbg" id="videoboxbt">
+                            <div class="videobox-1"></div>
+                            <div class="videobox-2 videoset"><iframe width="560" height="315" src="https://www.youtube.com/embed/NEjvI1ZQupc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="videobox-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;text-align: center; display: flex;">
+                    <div style="flex-basis: 100%;" id="btnbox--1"><a href="javascript:history.back()"><button class="buttonset" id="spbtnclset">Go Back</button></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footerbox">
+    <footer>
+        <div id="footerall">
+        <div id="footerleft">
+            <ul>
+                <li><a href="https://www.facebook.com/sean.liu.7545/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/_shawn__liu/" target="_blank">Instagram</a></li>
+                <li><a href="https://github.com/ShawnLiu0725" target="_blank">Github</a></li>
+            </ul>
+        </div>
+        <div id="footerright">
+            <span>&copy; 2022 ShawnLiu Design</span>
+        </div>
+        </div>
+    </footer>
+</section>
+        <!-- Optional JavaScript -->
+    <!-- Font Awesome First, then ionicons, then AOS, then Popper.js, then Bootstrap JS, then main.js -->
+    <script src="https://kit.fontawesome.com/568a5edde4.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</html>
